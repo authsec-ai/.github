@@ -1,8 +1,8 @@
 ## Hi there 👋
 
-<!--
 
-**Here are some ideas to get you started:**
+
+
 
 ## AuthSec is an Agent Native Authentication and Authorization platform
 
@@ -14,4 +14,3 @@
 - Enable storing and retrieval of secrets.
 
  
--->
