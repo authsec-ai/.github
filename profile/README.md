@@ -16,8 +16,6 @@ It provides identity, authentication, authorization, secrets management, and wor
 - 👥 **Multi-tenant IAM platform**  
 - 🔑 **Passkeys / WebAuthn MFA**
 
-AuthSec supports secure **machine-to-machine authentication** where services or autonomous agents verify each other using cryptographic identities and short-lived credentials rather than static secrets. :contentReference[oaicite:0]{index=0}
-
 ---
 
 # Installation
@@ -42,16 +40,12 @@ Both services must be running.
 - (Optional) Redis
 - (Optional) HashiCorp Vault
 
----
-
-### Clone the repository
+### Clone repository
 
 ```bash
 git clone https://github.com/authsec-ai/authsec.git
 cd authsec
 ```
-
----
 
 ### Configure environment
 
@@ -73,15 +67,13 @@ WEBAUTHN_RP_ID=localhost
 WEBAUTHN_ORIGIN=http://localhost:5173
 ```
 
----
-
-### Run the server
+### Run the backend
 
 ```bash
 go run ./cmd/
 ```
 
-AuthSec will start on:
+AuthSec backend will start on:
 
 ```
 http://localhost:7468
@@ -102,24 +94,18 @@ curl http://localhost:7468/authsec/uflow/health
 - Node.js **20+**
 - npm **10+**
 
----
-
-### Clone the repository
+### Clone repository
 
 ```bash
 git clone https://github.com/authsec-ai/authsec-ui.git
 cd authsec-ui
 ```
 
----
-
 ### Install dependencies
 
 ```bash
 npm install
 ```
-
----
 
 ### Configure environment
 
@@ -134,15 +120,13 @@ VITE_API_URL=http://localhost:7468
 VITE_APP_NAME=AuthSec
 ```
 
----
-
-### Start the UI
+### Start UI
 
 ```bash
 npm run dev
 ```
 
-UI will be available at:
+The UI will be available at:
 
 ```
 http://localhost:5173
@@ -173,21 +157,58 @@ http://localhost:5173
 
 # Documentation
 
-Complete documentation, setup guides, and tutorials are available at:
+Full documentation is available at:
 
-👉 **https://docs.authsec.dev/getting-started/**
+👉 https://docs.authsec.dev/getting-started/
 
-The docs include:
+The documentation includes:
 
-- Platform overview  
-- Workspace and tenant setup  
-- Authentication configuration  
-- RBAC configuration  
-- Autonomous AI agent authentication  
-- SPIFFE / workload identity integration  
+- Platform overview
+- Authentication setup
+- RBAC configuration
+- AI agent authentication
+- SPIFFE workload identity
 - Security best practices
+- Integration guides
 
-AuthSec documentation also explains how autonomous services securely authenticate with **short-lived credentials and workload identities instead of static API keys**. :contentReference[oaicite:1]{index=1}
+---
+
+# Open Source Documentation
+
+AuthSec documentation is open source and maintained in the following repositories.
+
+| Repository | Description |
+|---|---|
+| https://github.com/authsec-ai/authsec-community-docs | Platform documentation |
+| https://github.com/authsec-ai/authsec-community-apidocs | API reference documentation |
+
+Developers can update documentation when contributing features.
+
+---
+
+# Updating Docs Locally
+
+If you are contributing to AuthSec and want to update the documentation alongside your code changes:
+
+### Platform Documentation
+
+```bash
+git clone https://github.com/authsec-ai/authsec-community-docs.git
+cd authsec-community-docs
+```
+
+Follow the instructions in that repository to run the docs locally and submit a pull request with your changes.
+
+---
+
+### API Documentation
+
+```bash
+git clone https://github.com/authsec-ai/authsec-community-apidocs.git
+cd authsec-community-apidocs
+```
+
+Update API specs and examples according to your changes before submitting a pull request.
 
 ---
 
@@ -195,7 +216,7 @@ AuthSec documentation also explains how autonomous services securely authenticat
 
 If you prefer not to self-host AuthSec, you can use the managed platform:
 
-👉 **https://app.authsec.ai**
+👉 https://authsec.ai
 
 ---
 
@@ -206,6 +227,8 @@ If you prefer not to self-host AuthSec, you can use the managed platform:
 | https://github.com/authsec-ai/authsec | Core IAM backend |
 | https://github.com/authsec-ai/authsec-ui | Web console |
 | https://github.com/authsec-ai/sdk-authsec | SDK for agents and services |
+| https://github.com/authsec-ai/authsec-community-docs | Documentation |
+| https://github.com/authsec-ai/authsec-community-apidocs | API documentation |
 
 ---
 
