@@ -1,8 +1,8 @@
 # AuthSec
 
-**AuthSec** is an **Agent-Native Authentication and Authorization platform** designed for AI agents, MCP servers, and modern applications.
+**AuthSec** is an **Agent-Native Authentication and Authorization platform** designed for **AI agents, MCP servers, and modern applications**.
 
-It provides identity, authentication, authorization, secrets, and workload identity for autonomous systems and services.
+It provides identity, authentication, authorization, secrets management, and workload identity for autonomous systems and services.
 
 ---
 
@@ -11,10 +11,12 @@ It provides identity, authentication, authorization, secrets, and workload ident
 - 🔐 **Agent authentication** using OIDC / SAML2 SSO  
 - 🤖 **Headless authentication** using CIBA  
 - 🛡 **RBAC authorization** for AI agents and services  
-- 🔑 **Secure secrets storage and retrieval**  
-- 🔗 **SPIFFE workload identity integration**  
+- 🔑 **Secrets storage and retrieval**  
+- 🔗 **SPIFFE workload identity**  
 - 👥 **Multi-tenant IAM platform**  
 - 🔑 **Passkeys / WebAuthn MFA**
+
+AuthSec supports secure **machine-to-machine authentication** where services or autonomous agents verify each other using cryptographic identities and short-lived credentials rather than static secrets. :contentReference[oaicite:0]{index=0}
 
 ---
 
@@ -169,11 +171,31 @@ http://localhost:5173
 
 ---
 
+# Documentation
+
+Complete documentation, setup guides, and tutorials are available at:
+
+👉 **https://docs.authsec.dev/getting-started/**
+
+The docs include:
+
+- Platform overview  
+- Workspace and tenant setup  
+- Authentication configuration  
+- RBAC configuration  
+- Autonomous AI agent authentication  
+- SPIFFE / workload identity integration  
+- Security best practices
+
+AuthSec documentation also explains how autonomous services securely authenticate with **short-lived credentials and workload identities instead of static API keys**. :contentReference[oaicite:1]{index=1}
+
+---
+
 # Hosted Platform
 
 If you prefer not to self-host AuthSec, you can use the managed platform:
 
-**https://app.authsec.ai**
+👉 **https://app.authsec.ai**
 
 ---
 
