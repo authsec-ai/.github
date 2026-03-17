@@ -24,7 +24,7 @@ AuthSec consists of two main components:
 
 | Component | Repository |
 |---|---|
-| Backend API | https://github.com/authsec-ai/authsec |
+| Backend API | https://github.com/authsec-ai/authsec-ai |
 | Web Console | https://github.com/authsec-ai/authsec-ui |
 
 Both services must be running.
@@ -43,7 +43,7 @@ Both services must be running.
 ### Clone repository
 
 ```bash
-git clone https://github.com/authsec-ai/authsec.git
+git clone https://github.com/authsec-ai/authsec-ai.git
 cd authsec
 ```
 
@@ -224,7 +224,7 @@ If you prefer not to self-host AuthSec, you can use the managed platform:
 
 | Repository | Description |
 |---|---|
-| https://github.com/authsec-ai/authsec | Core IAM backend |
+| https://github.com/authsec-ai/authsec-ai | Core IAM backend |
 | https://github.com/authsec-ai/authsec-ui | Web console |
 | https://github.com/authsec-ai/sdk-authsec | SDK for agents and services |
 | https://github.com/authsec-ai/authsec-community-docs | Documentation |
